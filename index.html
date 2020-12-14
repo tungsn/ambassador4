@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Hof University Student Ambassadors around the world</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8"/>
+	<link href="css/lib/jqvmap.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="header">
+	
+		<fieldset style="margin:10px;">
+			
+			<legend>Find your ambassador!</legend>
+			
+			<p id="welcome-text">
+			Our International Student Ambassadors are happy to share you their
+			first-hand experiences of their study programs, academic life, possible career options and living in Hof.<br>
+			Explore our map or use our filter to find your ambassador!
+			</p>
+			
+			<!-- dropdown Lists -->
+			<div id="dropdownLists">
+				<div id="dropdownList-country">
+					<select id="country">
+						<option value="0" selected>--Select a country--</option>
+					</select>
+				</div>
+			
+				<div id="dropdownList-course">
+					<select id="course">
+						<option value="0" selected>--Select a study program--</option>
+						</select>
+				</div>
+				
+				<div id="dropdownList-year">
+					<select id="year">
+						<option value="0" selected>--Select a graduation year--</option>
+						</select>
+				</div>
+			</div>
+			
+		</fieldset>
+		
+		<a id="logo" href="https://www.hof-university.de/" target="_blank">
+		<img src="img/fh_hof_logo.png" alt="logo">
+		</a>
+			
+	</div>
+	
+	<div id="map-holder" style="width: 800px; height: 600px;">
+	
+		<div id="vmap"></div>
+	
+	</div>
+	
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2 id="modalTitle"></h2>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+
+	<!-- JS -->
+	<script src="js/lib/jquery-3.4.1.js"></script>
+	<script src="js/lib/jquery.vmap.js"></script>
+	<script src="js/lib/jquery.vmap.world.js"></script>
+	<script src="js/ambassador.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+
+</html>
